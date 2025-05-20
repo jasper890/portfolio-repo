@@ -1392,3 +1392,150 @@ ________________________________________________________________________________
   background-size: 100% 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23d9d8d8' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M19 5L5 19m14 0L5 5'/%3E%3C/svg%3E");
 }
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(34, 197, 94, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+}
+
+#contribution-count {
+  animation: fadeIn 1s ease-in, pulseGlow 2.5s infinite;
+}
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.github-chart {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  animation: slideInLeft 1s ease-out;
+}
+
+.github-profile-image {
+  animation: fadeSlideUp 0.6s ease-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+
+.github-username {
+  animation: fadeSlideUp 0.6s ease-out;
+  animation-delay: 0.4s;
+  animation-fill-mode: both;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.85;
+  }
+}
+
+.progress-circle-container {
+  animation: pulse 2.5s infinite ease-in-out;
+}
+
+.skill-card:hover {
+  box-shadow: 0 0 20px rgba(94, 92, 230, 0.4);
+}
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(94, 92, 230, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(94, 92, 230, 0.6);
+  }
+}
+
+.skill-card:hover {
+  animation: glow 1.5s infinite alternate;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.about-section-container {
+  animation: slideIn 0.8s ease-out;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.skill-card-image {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes fadePop {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.skill-card {
+  animation: fadePop 0.6s ease forwards;
+}
+#typewriter-title::after {
+  content: "|";
+  animation: blink 1s step-end infinite;
+  color: var(--text-color);
+  margin-left: 4px;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
