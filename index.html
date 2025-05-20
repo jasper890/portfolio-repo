@@ -1,0 +1,268 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="png/img" href="Images/home.png" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <meta http-equiv="refresh" content="2" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&family=IBM+Plex+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="chatbot.js" defer></script>
+    <title>Home</title>
+  </head>
+  <header>
+    <img
+      id="logo"
+      src="Images/jrn.png"
+      alt="logo"
+      width="200"
+      class="logoheader"
+    />
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav_item active">Home</a></li>
+        <li><a href="about.html" class="nav_item">About Me</a></li>
+
+        <li><a href="works.html" class="nav_item">Works</a></li>
+      </ul>
+    </nav>
+    <button id="modeToggle" class="toggleButton">🌙</button
+    ><!-- <h1>
+       
+        <span class="logo_bold">JRN</span><span class="roboto_thin">|</span>
+        <span class="logo_italic_thin">DEV</span>
+      </h1>-->
+  </header>
+  <body>
+    <section class="chatbot_Renalink">
+      <div id="chatbot-container">
+        <!-- Chat Button -->
+        <button id="chat-button" class="chat-button" aria-label="Open chat">
+          <span class="chat-icon"></span>
+        </button>
+
+        <!-- Chat Window -->
+        <div
+          id="chat-window"
+          class="chat-window hidden"
+          role="dialog"
+          aria-labelledby="chat-title"
+        >
+          <div class="chat-header">
+            <div class="header-content">
+              <div class="header-text">
+                <h3 id="chat-title">Jasper</h3>
+                <span class="status-indicator"></span>
+              </div>
+            </div>
+            <button
+              id="close-chat"
+              class="close-button"
+              aria-label="Close chat"
+            >
+              <span class="exit-icon"></span>
+            </button>
+          </div>
+
+          <div
+            id="chat-messages"
+            class="chat-messages"
+            role="log"
+            aria-live="polite"
+          >
+            <div class="message bot welcome-message">
+              <p>
+                Hey, I’m Jasper’s portfolio bot. I’m here to walk you through
+                his projects, skills, and what he’s been building. Jasper’s not
+                the type to brag — he builds, tests, and improves. So if you're
+                curious about practical tools, clean code, or just want to see
+                what he's been up to, you’re in the right place. Ask me anything
+                — or pick a topic to start: <br />📂 Projects <br />🛠️ Tech
+                Stack<br />
+                🎨 Design Work <br />🧠 Experience <br />🗨️ Contact Info
+              </p>
+            </div>
+          </div>
+
+          <div class="chat-input-container">
+            <textarea
+              id="chat-input"
+              placeholder="Type your message..."
+              rows="1"
+              aria-label="Type your message"
+            ></textarea>
+            <button id="send-message" aria-label="Send message">
+              <span class="send-icon"></span>
+            </button>
+          </div>
+
+          <div class="chat-footer">
+            <p class="chat-footer-text">Created by Jasper Ngo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section1" id="about">
+      <div class="ctn">
+        <div class="image-container_PROFILE">
+          <img
+            src="Images/portfoliopic.png"
+            alt="jasperNgo"
+            class="profile-pic"
+          />
+        </div>
+
+        <div class="buttons">
+          <h1 class="chTitle">
+            Hi, I'm Jasper Ngo
+            <div class="text-slider boldText">
+              <div class="slide">I'm A Future Software Engineer.</div>
+              <div class="slide">I'm A BSIT Student.</div>
+              <div class="slide">I'm A Web Developer.</div>
+              <div class="slide">I'm An Aspiring App Developer.</div>
+              <div class="slide">I'm A Gamer.</div>
+              <div class="slide">I'm A Problem Solver.</div>
+              <div class="slide">I'm A Tech Enthusiast.</div>
+              <div class="slide">I'm A Microsoft PowerApps Learner.</div>
+              <div class="slide">I'm A Data Entry Practitioner.</div>
+              <div class="slide">I'm A Java Developer.</div>
+              <div class="slide">I'm A Logo Design Enthusiast.</div>
+              <div class="slide">I'm A Blockchain Security Enthusiast.</div>
+              <div class="slide">I'm A App Developer in Progress.</div>
+            </div>
+          </h1>
+          <div>
+            <pre id="pre" class="preEmpty visible changeCtn">
+Thanks for visiting! 
+Take a look at my work and get to know me through the 
+projects I’ve created. I'm always excited to learn, 
+grow, and create new things.Let’s explore what I’ve 
+been up to!
+
+</pre
+            >
+
+            <pre id="preabout" class="preEmpty">
+I am a BSIT 2-6 student passionate about creating 
+useful code.I enjoy solving problems through technology 
+and building applications. I've worked on NFC attendance 
+systems to enhance automation efficiency. Skilled in Excel 
+coding and PowerApps, I streamline smart solutions.
+I also enjoy <b style="color:#34d399" id="scrollText">designing logos</b>, blending creativity with
+technical skills. Always eager to learn, I strive to 
+grow and innovate further.
+    </pre>
+            <pre id="prehobby" class="preEmpty">
+In my free time, I enjoy playing chess, challenging my
+mind with strategy. I love coding and building systems that 
+solve real-world problems. Watching movies helps me relax, 
+while reading self-improvement books keeps me learning 
+and growing every day.
+
+</pre
+            >
+            <pre id="preworks" class="preEmpty">
+I developed an NFC-based attendance system for my senior 
+high school capstone research, integrating it with a 
+spreadsheet API for real-time tracking. Apart from 
+that, I use PowerApps to create fast-paced applications,
+including an attendance system. I also built a
+student information system using Java, enhancing data 
+management and accessibility.
+
+          </pre
+            >
+            <pre id="presocial" class="preEmpty">
+I enjoy sharing my projects and insights on various 
+platforms.You can explore my work on GitHub,
+connect with me professionally on LinkedIn,
+follow my updates on Facebook,and reach 
+out to me via email.Let's connect and collaborate!
+
+          </pre
+            >
+            <button class="sectionOneButtons" id="aboutme" dref="about">
+              About me
+            </button>
+            <button class="sectionOneButtons" id="hobby" dref="hobby">
+              Hobby
+            </button>
+            <button class="sectionOneButtons" id="works" dref="works">
+              Works
+            </button>
+            <button class="sectionOneButtons" id="social" dref="social">
+              Social Media
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="spacer"></div>
+      <!-- Extra space for scrolling -->
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <img id="logo2" src="Images/jrn.png" alt="JRN DEV" class="logo" />
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+
+            <a href="works.html">Works</a>
+            <a href="about.html">About me</a>
+          </nav>
+        </div>
+
+        <div class="footer-right">
+          <h2 class="socials-title">Connect with me</h2>
+          <div class="social-links">
+            <div class="social-row">
+              <a
+                href="https://www.facebook.com/JasperRyan2"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="Images/facebook.png" alt="Facebook" />
+                <span>Jasper Ngo</span>
+              </a>
+              <a href="mailto:ngojasperryan@gmail.com" class="social-link">
+                <img src="Images/gmail.png" alt="Gmail" />
+                <span>ngojasperryan@gmail.com</span>
+              </a>
+            </div>
+          </div>
+          <div class="social-row">
+            <a
+              href="https://www.linkedin.com/in/jasper-ryan-ngo/"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="Images/linkedin.png" alt="LinkedIn" />
+              <span>Jasper Ryan J. Ngo</span>
+            </a>
+            <a
+              href="https://github.com/jasper890"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="Images/github.png" alt="GitHub" />
+              <span>jasper890</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© All Rights Reserved</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
