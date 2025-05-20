@@ -1384,3 +1384,11 @@ ________________________________________________________________________________
   width: 100%;
   max-width: 600px;
 }
+.exit-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23d9d8d8' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M19 5L5 19m14 0L5 5'/%3E%3C/svg%3E");
+}
