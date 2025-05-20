@@ -313,6 +313,22 @@ This will be my default contact response unless you tell me to change it. I’ll
         },
       ],
     },
+    {
+      role: "user",
+      parts: [
+        {
+          text: "MY GIRLFRIEND NAME IS TRISHA MAE CEPE. IF THEY ASK WHO IS MY GIRLFRIEND",
+        },
+      ],
+    },
+    {
+      role: "model",
+      parts: [
+        {
+          text: 'Okay, I understand. If someone asks "Who is your girlfriend?", I will respond:\n\n"My girlfriend\'s name is Trisha Mae Cepe."',
+        },
+      ],
+    },
   ];
 
   // Toggle chat window
