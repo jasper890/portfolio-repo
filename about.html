@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="png/img" href="Images/person.png" />
+    <script src="chatbot.js" defer></script>
+
+    <title>About Me</title>
+  </head>
+
+  <body>
+    <header>
+      <img
+        id="logo"
+        src="Images/jrn.png"
+        alt="logo"
+        width="200"
+        class="logoheader"
+      />
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav_item">Home</a></li>
+          <li><a href="about.html" class="nav_item active">About Me</a></li>
+          <li><a href="works.html" class="nav_item">Works</a></li>
+        </ul>
+      </nav>
+      <button id="modeToggle" class="toggleButton">🌙</button>
+    </header>
+    <section class="chatbot_Renalink">
+      <div id="chatbot-container">
+        <!-- Chat Button -->
+        <button id="chat-button" class="chat-button" aria-label="Open chat">
+          <span class="chat-icon"></span>
+        </button>
+
+        <!-- Chat Window -->
+        <div
+          id="chat-window"
+          class="chat-window hidden"
+          role="dialog"
+          aria-labelledby="chat-title"
+        >
+          <div class="chat-header">
+            <div class="header-content">
+              <div class="header-text">
+                <h3 id="chat-title">Jasper</h3>
+                <span class="status-indicator"></span>
+              </div>
+            </div>
+            <button
+              id="close-chat"
+              class="close-button"
+              aria-label="Close chat"
+            >
+              <span class="exit-icon"></span>
+            </button>
+          </div>
+
+          <div
+            id="chat-messages"
+            class="chat-messages"
+            role="log"
+            aria-live="polite"
+          >
+            <div class="message bot welcome-message">
+              <p>
+                👋 Hey, I’m Jasper — well, the AI version of him.<br /><br /><strong
+                  >What do I do in life?</strong
+                ><br /><br />I build things — quietly, but with purpose. I’m a
+                tech student, but more than that, I’m someone who likes making
+                systems that work. Whether it's an NFC attendance app, a
+                scheduling system, or a clean portfolio site, I focus on
+                building tools that solve real problems.<br /><br />I learn by
+                doing. Most of what I know comes from experimenting — PHP,
+                JavaScript, Java, PowerApps, databases, front-end design. I
+                don’t just study these things, I use them to make something
+                happen.<br /><br />I'm not the loudest person in the room, but I
+                stay consistent. I let the work speak. I like design that’s
+                clean, logic that’s solid, and code that’s useful. That’s how I
+                show up — not just in class, but in what I create.<br /><br />What
+                I do in life is this: Learn what matters. Build what helps. And
+                keep getting better at it.
+              </p>
+            </div>
+          </div>
+
+          <div class="chat-input-container">
+            <textarea
+              id="chat-input"
+              placeholder="Type your message..."
+              rows="1"
+              aria-label="Type your message"
+            ></textarea>
+            <button id="send-message" aria-label="Send message">
+              <span class="send-icon"></span>
+            </button>
+          </div>
+
+          <div class="chat-footer">
+            <p class="chat-footer-text">Created by Jasper Ngo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sectionAbout">
+      <ul class="about">
+        <h1 style="text-align: center">About Me</h1>
+        <li class="about-item">
+          <div class="image-container">
+            <img
+              src="Images/attendance system using nfc.jpg"
+              alt="Gallery image 1"
+            />
+          </div>
+          <div class="description">
+            <h2>Attendance System NFC based technology</h2>
+            <p class="text_Description">
+              Passionate about NFC technology and security, I built an
+              attendance system using NFC tags for quick student check-ins. This
+              project enhanced my skills in UI design, database integration, and
+              real-time data processing.
+            </p>
+          </div>
+        </li>
+        <li class="about-item">
+          <div class="image-container">
+            <img src="Images/tvbroad.jpg" alt="Gallery image 2" />
+          </div>
+          <div class="description">
+            <h2>Tv/Radio Broadcasting</h2>
+            <p class="text_Description">
+              With experience in TV and radio broadcasting, I enjoy handling
+              various software like Virtual DJ and OBS Studio. This has
+              strengthened my skills in media production and live streaming.
+            </p>
+          </div>
+        </li>
+        <li class="about-item">
+          <div class="image-container">
+            <img src="Images/POWERAPPS_ATTENDANCE.png" alt="Gallery image 3" />
+          </div>
+          <div class="description">
+            <h2>Attendance Using MS Powerapps</h2>
+            <p class="text_Description">
+              This system uses PowerApps with an Excel database via API to
+              record attendance in real time. Integrated with NFC technology, it
+              enables instant, error-free tracking via OneDrive or SharePoint.
+            </p>
+          </div>
+        </li>
+        <li class="about-item">
+          <div class="image-container">
+            <img src="Images/monitoringsystem.png" alt="Gallery image 3" />
+          </div>
+          <div class="description">
+            <h2>Student Monitoring System</h2>
+            <p class="text_Description">
+              Built with Java and JFrame, this system tracks student activities
+              in real time. It includes an admin panel, secure login, and
+              database integration for efficient data management.
+            </p>
+          </div>
+        </li>
+        <div class="modal" id="imageModal">
+          <button class="close-modal" onclick="closeModal()">×</button>
+          <img id="modalImage" src="" alt="Full screen image" />
+        </div>
+      </ul>
+    </section>
+    <section class="github-accFrame">
+      <h2 class="github-title">My GitHub Contributions</h2>
+      <div class="github-card">
+        <div class="github-profile-container">
+          <img
+            src="https://github.com/jasper890.png"
+            alt="GitHub Profile Picture"
+            class="github-profile-image"
+          />
+          <h3 class="github-username">jasper890</h3>
+          <div id="contribution-count">Loading contributions...</div>
+          <img
+            src="https://ghchart.rshah.org/00c853/jasper890"
+            alt="GitHub Contribution Chart"
+            class="github-chart"
+          />
+        </div>
+      </div>
+      <img
+        src="https://github-readme-stats.vercel.app/api/top-langs/?username=jasper890&layout=compact&theme=tokyonight"
+        alt="Top Languages"
+      />
+    </section>
+
+    <section class="skill-cardSection-container">
+      <div id="app">
+        <div class="about-section-container">
+          <span class="about-section-title">What I Do & What I Use</span>
+          <p class="about-description">
+            I build things quietly but purposefully, learning by doing and
+            applying what I know to make systems that actually work. I’ve worked
+            with front-end tools like HTML, CSS, and JavaScript; back-end
+            languages like PHP and Java; and platforms like Power Apps and MIT
+            App Inventor. I’ve also gained experience using SQL for managing
+            data, Git for version control, and tools like OBS Studio and Virtual
+            DJ from my media background. Some skills are stronger than others —
+            I’m confident in areas like HTML, CSS, JavaScript, and Power Apps,
+            while I’m still building up in SQL, Java, and Git — but what matters
+            most to me is using all of it to build useful, clean, and working
+            systems that solve real problems.
+          </p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="HTML"
+            class="skill-card-image"
+          />
+          <div class="skill-card-content">
+            <div class="progress-circle-container">
+              <svg class="progress-circle" viewBox="0 0 100 100">
+                <circle
+                  class="progress-circle-bg"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+                <circle
+                  class="progress-circle-value percent-70"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+              </svg>
+              <div class="progress-percentage">70%</div>
+            </div>
+            <h3 class="skill-title">HTML</h3>
+            <p class="skill-description">
+              Building structured and semantic web pages
+            </p>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <img
+            src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="CSS"
+            class="skill-card-image"
+          />
+          <div class="skill-card-content">
+            <div class="progress-circle-container">
+              <svg class="progress-circle" viewBox="0 0 100 100">
+                <circle
+                  class="progress-circle-bg"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+                <circle
+                  class="progress-circle-value advanced"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+              </svg>
+              <div class="progress-percentage">85%</div>
+            </div>
+            <h3 class="skill-title">CSS</h3>
+            <p class="skill-description">Styling and responsive web design</p>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <img
+            src="https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="JavaScript"
+            class="skill-card-image"
+          />
+          <div class="skill-card-content">
+            <div class="progress-circle-container">
+              <svg class="progress-circle" viewBox="0 0 100 100">
+                <circle
+                  class="progress-circle-bg"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+                <circle
+                  class="progress-circle-value percent-50"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+              </svg>
+              <div class="progress-percentage">50%</div>
+            </div>
+            <h3 class="skill-title">JavaScript</h3>
+            <p class="skill-description">
+              Interactive web development and DOM manipulation
+            </p>
+            <div class="skill-level">Intermediate</div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+            alt="Git"
+            class="skill-card-image"
+          />
+          <div class="skill-card-content">
+            <div class="progress-circle-container">
+              <svg class="progress-circle" viewBox="0 0 100 100">
+                <circle
+                  class="progress-circle-bg"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+                <circle
+                  class="progress-circle-value percent-70"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+              </svg>
+              <div class="progress-percentage">70%</div>
+            </div>
+            <h3 class="skill-title">Git</h3>
+            <p class="skill-description">
+              Version control and collaboration through Git
+            </p>
+            <div class="skill-level">Intermediate</div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Microsoft_Power_Apps_logo.svg"
+            alt="Power Apps"
+            class="skill-card-image"
+          />
+          <div class="skill-card-content">
+            <div class="progress-circle-container">
+              <svg class="progress-circle" viewBox="0 0 100 100">
+                <circle
+                  class="progress-circle-bg"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+                <circle
+                  class="progress-circle-value percent-60"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+              </svg>
+              <div class="progress-percentage">60%</div>
+            </div>
+            <h3 class="skill-title">Power Apps</h3>
+            <p class="skill-description">
+              Creating low-code apps to automate and simplify processes
+            </p>
+            <div class="skill-level">Intermediate</div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"
+            alt="Java"
+            class="skill-card-image"
+          />
+          <div class="skill-card-content">
+            <div class="progress-circle-container">
+              <svg class="progress-circle" viewBox="0 0 100 100">
+                <circle
+                  class="progress-circle-bg"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+                <circle
+                  class="progress-circle-value percent-80"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+              </svg>
+              <div class="progress-percentage">80%</div>
+            </div>
+            <h3 class="skill-title">Java</h3>
+            <p class="skill-description">
+              Building Android apps and object-oriented systems
+            </p>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://www.php.net/images/logos/new-php-logo.svg"
+            alt="PHP"
+            class="skill-card-image"
+          />
+          <div class="skill-card-content">
+            <div class="progress-circle-container">
+              <svg class="progress-circle" viewBox="0 0 100 100">
+                <circle
+                  class="progress-circle-bg"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+                <circle
+                  class="progress-circle-value percent-40"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+              </svg>
+              <div class="progress-percentage">40%</div>
+            </div>
+            <h3 class="skill-title">PHP</h3>
+            <p class="skill-description">
+              Building dynamic web apps with backend logic
+            </p>
+            <div class="skill-level">Beginner</div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/MIT_App_Inventor_Logo.svg/512px-MIT_App_Inventor_Logo.svg.png"
+            alt="MIT App Inventor"
+            class="skill-card-image"
+          />
+          <div class="skill-card-content">
+            <div class="progress-circle-container">
+              <svg class="progress-circle" viewBox="0 0 100 100">
+                <circle
+                  class="progress-circle-bg"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+                <circle
+                  class="progress-circle-value percent-50"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+              </svg>
+              <div class="progress-percentage">50%</div>
+            </div>
+            <h3 class="skill-title">MIT App Inventor</h3>
+            <p class="skill-description">
+              Developing mobile apps using visual blocks
+            </p>
+            <div class="skill-level">Intermediate</div>
+          </div>
+        </div>
+
+        <!-- OBS Studio - 70% -->
+        <div class="skill-card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Open_Broadcaster_Software_Logo.svg"
+            alt="OBS Studio"
+            class="skill-card-image"
+          />
+          <div class="skill-card-content">
+            <div class="progress-circle-container">
+              <svg class="progress-circle" viewBox="0 0 100 100">
+                <circle
+                  class="progress-circle-bg"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+                <circle
+                  class="progress-circle-value percent-70"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+              </svg>
+              <div class="progress-percentage">70%</div>
+            </div>
+            <h3 class="skill-title">OBS Studio</h3>
+            <p class="skill-description">
+              Live streaming and recording with custom scenes
+            </p>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+        <!-- Virtual DJ - 70% -->
+        <div class="skill-card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e3/VirtualDJ_Logo.png"
+            alt="Virtual DJ"
+            class="skill-card-image"
+          />
+          <div class="skill-card-content">
+            <div class="progress-circle-container">
+              <svg class="progress-circle" viewBox="0 0 100 100">
+                <circle
+                  class="progress-circle-bg"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+                <circle
+                  class="progress-circle-value percent-70"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+              </svg>
+              <div class="progress-percentage">70%</div>
+            </div>
+            <h3 class="skill-title">Virtual DJ</h3>
+            <p class="skill-description">
+              Mixing music, effects, and live audio setup
+            </p>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/603/603201.png"
+            alt="SQL"
+            class="skill-card-image"
+          />
+          <div class="skill-card-content">
+            <div class="progress-circle-container">
+              <svg class="progress-circle" viewBox="0 0 100 100">
+                <circle
+                  class="progress-circle-bg"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+                <circle
+                  class="progress-circle-value percent-50"
+                  cx="50"
+                  cy="50"
+                  r="46"
+                ></circle>
+              </svg>
+              <div class="progress-percentage">50%</div>
+            </div>
+            <h3 class="skill-title">SQL</h3>
+            <p class="skill-description">
+              Querying and managing relational databases
+            </p>
+            <div class="skill-level">Intermediate</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <img id="logo2" src="Images/jrn.png" alt="JRN DEV" class="logo" />
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+
+            <a href="works.html">Works</a>
+            <a href="about.html">About me</a>
+          </nav>
+        </div>
+
+        <div class="footer-right">
+          <h2 class="socials-title">Connect with me</h2>
+          <div class="social-links">
+            <div class="social-row">
+              <a
+                href="https://www.facebook.com/JasperRyan2"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="Images/facebook.png" alt="Facebook" />
+                <span>Jasper Ngo</span>
+              </a>
+              <a href="mailto:ngojasperryan@gmail.com" class="social-link">
+                <img src="Images/gmail.png" alt="Gmail" />
+                <span>ngojasperryan@gmail.com</span>
+              </a>
+            </div>
+          </div>
+          <div class="social-row">
+            <a
+              href="https://www.linkedin.com/in/jasper-ryan-ngo/"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="Images/linkedin.png" alt="LinkedIn" />
+              <span>Jasper Ryan J. Ngo</span>
+            </a>
+            <a
+              href="https://github.com/jasper890"
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="Images/github.png" alt="GitHub" />
+              <span>jasper890</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© All Rights Reserved</div>
+    </footer>
+    <script src="script.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
