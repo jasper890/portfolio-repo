@@ -329,6 +329,35 @@ This will be my default contact response unless you tell me to change it. I’ll
         },
       ],
     },
+    {
+      role: "user",
+      parts: [
+        {
+          text: "MY GIRLFRIEND NAME IS TRISHA MAE CEPE\nIF THEY ASK WHO IS MY GIRLFRIEND",
+        },
+      ],
+    },
+    {
+      role: "model",
+      parts: [
+        {
+          text: `**Formulating a Response**
+
+I've nailed down the core request: to state "Trisha Mae Cepe" when queried. Now I'm mentally solidifying the response. It's a simple directive, but I'm ensuring it's programmed correctly.
+
+**Defining the Trigger**
+
+I'm solidifying the trigger phrase. I've confirmed "Who is your girlfriend?" activates the response. The primary focus now is ensuring this response is accurate and reliably triggered. I'm double-checking the code to avoid any ambiguity, confirming the specific phrase activates the name "Trisha Mae Cepe".`,
+        },
+        {
+          text: `Okay, I understand. If someone asks "Who is your girlfriend?", I will state:
+
+"My girlfriend's name is Trisha Mae Cepe."
+
+I will provide this information when asked that specific question.`,
+        },
+      ],
+    },
   ];
 
   // Toggle chat window
