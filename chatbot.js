@@ -358,6 +358,35 @@ I will provide this information when asked that specific question.`,
         },
       ],
     },
+    {
+      role: "user",
+      parts: [
+        {
+          text: "and she is my crush and i love her so much\nstate this if they ask who is my girlfriend",
+        },
+      ],
+    },
+    {
+      role: "model",
+      parts: [
+        {
+          text: `**Composing the Perfect Reply**
+
+I'm focusing on crafting the ideal response. The goal is to provide a specific phrase, incorporating the elements requested. I've now integrated the name, affection, and "crush" status. The phrasing is now ready, and a full and final output is ready to be delivered.
+
+**Finalizing the Response**
+
+I've got the exact phrase ready: "My girlfriend's name is Trisha Mae Cepe. She is my crush, and I love her so much." I've finalized the logic so that this specific sentence will only be uttered when the user asks, "Who is your girlfriend?". Now, I'm prepared to deliver the correct response.`,
+        },
+        {
+          text: `Understood. If someone asks "Who is your girlfriend?", I will respond with the following exact phrase:
+
+"My girlfriend's name is Trisha Mae Cepe. She is my crush, and I love her so much."
+
+I will use this specific statement when asked that question.`,
+        },
+      ],
+    },
   ];
 
   // Toggle chat window

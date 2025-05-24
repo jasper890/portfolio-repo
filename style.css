@@ -1568,3 +1568,41 @@ ________________________________________________________________________________
     transform: translateY(0);
   }
 }
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio (height/width * 100) */
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or 'contain' if you prefer */
+}
+/* Default styles (for all sizes) are already defined */
+
+/* For screens up to 360px wide */
+@media (max-width: 360px) {
+  .video-container {
+    padding-top: 75%; /* You can adjust aspect ratio if needed */
+  }
+}
+
+/* For screens up to 720px wide */
+@media (max-width: 720px) {
+  .video-container {
+    padding-top: 56.25%; /* Keep or modify the aspect ratio as needed */
+  }
+}
+
+/* For screens 1200px and above */
+@media (min-width: 1200px) {
+  .video-container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container on large screens */
+  }
+}
