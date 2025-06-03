@@ -1,6 +1,6 @@
 # Brief Discussion of my portfolio and explaining the codes
 
-This is a **My personal portfolio website which is named as JRN|DEV** designed to showcase the owner's skills, projects, and GitHub activity.
+This is a **My personal portfolio website which is named as JRN|DEV** designed to showcase the my own skills, projects, and GitHub activity.
 It features an **interactive chatbot**, powered by **Gemini AI** and configured with a specific *persona*, to answer questions about the work.
 The site also includes various UI enhancements such as **dark/light theme toggling**, *dynamic switching between content sections*, and an *image gallery modal* for viewing project visuals.
 
